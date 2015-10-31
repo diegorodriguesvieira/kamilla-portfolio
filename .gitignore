@@ -1,0 +1,10 @@
+# Folders to ignore
+node_modules
+dist
+.tmp
+
+# OS or Editor Folders
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace

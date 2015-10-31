@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Kamilla Bittencourt     -- Designer  -- @Kamilla_Bi
+
+  Diego Rodrigues Vieira  -- Front-End -- @diegortw
+
+# THANKS
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
