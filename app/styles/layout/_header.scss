@@ -1,0 +1,67 @@
+//
+// Header
+// ====================================
+
+.page-logo {
+  margin: 0 auto;
+}
+
+.page-heager-me-name {
+  width: 124px;
+  height: 30px;
+  margin: 50px auto;
+  background: url(../svg/kamilla-type.svg);
+}
+
+// Nav
+.page-nav {
+  list-style: none;
+  @include clearfix();
+  display: table;
+  margin: 0 auto;
+}
+
+.page-nav-item {
+  display: block;
+  text-align: center;
+  position: relative;
+  backface-visibility: hidden;
+  @include rem(font-size, 16px);
+  color: $gray-85;
+  margin-bottom: $line-height-computed;
+
+  @include media-breakpoint-up(md) {
+    & {
+      display: inline-block;
+      margin: 0 50px 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &:after {
+    content: "";
+    height: 1px;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    background: $gray-85;
+    backface-visibility: hidden;
+    transform: translateX(-50%);
+    transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $gray-85;
+    text-decoration: none;
+
+    &:after {
+      width: 100%;
+    }
+  }
+}

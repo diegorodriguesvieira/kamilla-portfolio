@@ -1,0 +1,30 @@
+//
+// Footer
+// ====================================
+
+.page-footer {
+  background: #fff;
+  text-align: center;
+  padding: 50px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  margin-bottom: -100px;
+
+  p {
+    margin: 0;
+  }
+
+  .icon-code {
+    position: relative;
+    top: 5px;
+    @include rem(font-size, 20px);
+  }
+
+  .icon-heart {
+    color: $red-100;
+    @include rem(font-size, 14px);
+    margin: 0 4px;
+  }
+}

@@ -1,0 +1,35 @@
+//
+// Calc rem
+//
+// A small mixin for easy use of rem with px as fallback
+//
+// usage: @include rem(font-size, 14px)
+// usage: @include rem(marign, 0 12px 2 1.2)
+// usage: @include rem(padding, 1.5 24px)
+//
+// Thanks to Eric Meyer for https://github.com/ericam/susy
+// Thanks to Hans Christian Reinl for http://drublic.de/blog/rem-fallback-sass-less/
+// ====================================
+
+@mixin rem($property, $values) {
+  // Create a couple of empty lists as output buffers.
+  $rem-values: ();
+
+  // Loop through the $values list
+  @each $value in $values {
+    // For each property value, if it's in rem or px, derive both rem and
+    // px values for it and add those to the end of the appropriate buffer.
+    // Ensure all pixel values are rounded to the nearest pixel.
+    @if $value == 0 or $value == 0px {
+      // 0 -- use it without a unit
+      $rem-values: join($rem-values, 0);
+    } @else if type-of($value) == number and (unit($value) == px) {
+      $value: unitless($value);
+      $new-rem-value: $value / unitless($font-size-base-calc-rem);
+      $rem-values: join($rem-values, #{$new-rem-value}rem);
+    }
+  }
+
+  // output the converted rules
+  #{$property}: $rem-values;
+}

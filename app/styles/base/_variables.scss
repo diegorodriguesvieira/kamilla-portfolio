@@ -1,0 +1,76 @@
+//
+// Variables
+// ====================================
+
+//
+// Colors
+// ## Our color pallet
+
+$gray-50:                                    #eeeeee !default;
+$gray-80:                                    #666666 !default;
+$gray-85:                                    #313131 !default;
+
+$red-100:                                    #cf000f !default;
+
+//
+// Links
+// ##
+
+$link-color:                                 #d25380 !default;
+$link-hover-color:                           #d25380 !default;
+$link-hover-decoration:                      underline !default;
+
+
+// Scaffolding
+//
+// ## Settings for some of the most global styles.
+
+$body-bg:                                    $gray-50 !default;
+$body-color:                                 $gray-80 !default;
+
+
+// Typography
+//
+// ##
+
+$font-size-base-percentage:                  62.5% !default; // ((10 / 16) * 100)
+$font-size-base-calc-rem:                    10px !default;
+
+$font-family-sans-serif:                     "Open Sans", Helvetica, Arial, sans-serif !default;
+$font-family-base:                           $font-family-sans-serif !default;
+
+$font-weight-bold:                           600 !default;
+
+$font-size-base:                             14px !default;
+$line-height-base:                           1.5 !default;
+
+$line-height-computed:                       floor($font-size-base * $line-height-base) !default;
+
+
+// Structure
+//
+// ##
+
+$container-width:                            960px !default;
+$container-horizontal-padding:               10px !default;
+
+// Grid Breakpoints
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 34em,
+  // Medium screen / tablet
+  md: 48em,
+  // Large screen / desktop
+  lg: 62em,
+  // Extra large screen / wide desktop
+  xl: 75em
+) !default;
+
+
+// Footer
+//
+// ##
+
+$footer-height:                              145px !default;

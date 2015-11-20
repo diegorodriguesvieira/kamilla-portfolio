@@ -1,0 +1,44 @@
+//
+// Icons
+// ====================================
+
+
+$icon-font-name:  'icomoon';
+$icon-font-path:  '../fonts/';
+
+@at-root {
+  @font-face {
+    font-family: 'icomoon';
+    src: url('#{$icon-font-path}#{$icon-font-name}.eot');
+    src: url('#{$icon-font-path}#{$icon-font-name}.eot?#iefix') format('embedded-opentype'),
+         url('#{$icon-font-path}#{$icon-font-name}.woff') format('woff'),
+         url('#{$icon-font-path}#{$icon-font-name}.ttf') format('truetype'),
+         url('#{$icon-font-path}#{$icon-font-name}.svg#icomoon') format('svg');
+  }
+}
+
+.icon {
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-code:before {
+	content: "\e900";
+}
+.icon-heart:before {
+	content: "\e901";
+}
+.icon-linkedin:before {
+	content: "\e902";
+}
+.icon-dribbble:before {
+	content: "\e903";
+}
+.icon-facebook:before {
+	content: "\e904";
+}

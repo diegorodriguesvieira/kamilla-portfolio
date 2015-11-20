@@ -63,6 +63,23 @@ gulp.task('copy', () =>
     .pipe($.size({title: 'copy'}))
 );
 
+// Copy all svg files
+gulp.task('svg', () =>
+  gulp.src('app/svg/**/*')
+    .pipe($.cache($.imagemin()))
+    .pipe(gulp.dest('dist/svg'))
+    .pipe($.size({title: 'svg'}))
+);
+
+// Copy all font files
+gulp.task('fonts', () =>
+  gulp.src('app/fonts/**/*.{eot,svg,ttf,woff}')
+    .pipe($.rename({dirname: '/'})) // remove subfolders
+    .pipe(gulp.dest('.tmp/fonts'))
+    .pipe(gulp.dest('dist/fonts'))
+    .pipe($.size({title: 'fonts'}))
+);
+
 // Compile and automatically prefix stylesheets
 gulp.task('styles', () => {
   const AUTOPREFIXER_BROWSERS = [
@@ -140,7 +157,7 @@ gulp.task('html', () => {
 gulp.task('clean', cb => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}, cb));
 
 // Watch files for changes & reload
-gulp.task('serve', ['scripts', 'styles'], () => {
+gulp.task('serve', ['scripts', 'styles', 'fonts'], () => {
   browserSync({
     notify: false,
     // Customize the Browsersync console logging prefix
@@ -181,7 +198,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['jshint', 'html', 'scripts', 'images', 'copy'],
+    ['jshint', 'html', 'scripts', 'images', 'copy', 'svg', 'fonts'],
     cb
   )
 );

@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-of-kamilla",
+  "description": "The Kamilla's portfolio.",
+  "main": "gulpfile.babel.js",
+  "authors": "Diego Rodrigues Vieira",
+  "license": "Apache-2.0",
+  "keywords": [
+    "portfolio",
+    "design",
+    "web",
+    "design"
+  ],
+  "homepage": "https://github.com/diegorodriguesvieira/kamilla-portfolio",
+  "moduleType": "globals",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "photoswipe": "~4.1.0"
+  }
+}

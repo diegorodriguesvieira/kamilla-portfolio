@@ -1,0 +1,25 @@
+//
+// Styles
+// ====================================
+
+// Base
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+
+// Core
+@import "core/normalize";
+@import "core/scaffolding";
+@import "core/type";
+@import "core/animations";
+@import "core/me";
+@import "core/icons";
+@import "core/structure";
+@import "core/photoswipe";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+//Pages
+@import "pages/home";

@@ -1,0 +1,16 @@
+//
+// Functions
+// @unitless - returns unitless number
+// ====================================
+
+@function unitless($number) {
+  $unit: unit($number);
+  $one: 1;
+
+  @if $unit == "em"  { $one: 1em;  }
+  @if $unit == "rem" { $one: 1rem; }
+  @if $unit == "px"  { $one: 1px;  }
+  @if $unit == "%"   { $one: 1%;   }
+
+  @return $number / $one;
+}

@@ -1,0 +1,64 @@
+//
+// Scaffolding
+// ====================================
+
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+// Body reset
+html {
+  font-size: $font-size-base-percentage;
+  touch-action: manipulation; // https://developers.google.com/web/updates/2013/12/300ms-tap-delay-gone-away
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  margin: 50px 0 $footer-height 0;
+  color: $body-color;
+  background-color: $body-bg;
+  @include rem(font-size, $font-size-base);
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Images
+
+img {
+  vertical-align: middle;
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  @include img-responsive;
+}
+
+// Links
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus {
+    @include tab-focus;
+  }
+}
