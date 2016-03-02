@@ -1,0 +1,22 @@
+
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  @include clearfix;
+}
+.center-block {
+  @include center-block;
+}
+
+// Toggling content
+// -------------------------
+
+.text-hide {
+  @include text-hide;
+}

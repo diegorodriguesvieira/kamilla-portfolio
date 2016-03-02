@@ -1,7 +1,8 @@
 //
-// Logo
+// Me
 // ====================================
 
+// Me
 .me-wrapper {
   position: relative;
   width: 170px;
@@ -46,4 +47,77 @@
   margin-top: -10px;
   margin-left: -10px;
   background: url(../svg/kamilla-portfolio-heart.svg);
+}
+
+
+// Me at work
+$me-at-work-width:                  450px !default;
+$me-at-work-width-self:             297px !default;
+$me-at-work-max-height:             200px !default;
+$me-at-work-cat-width:              120px !default;
+$me-at-work-cat-head-width:         50px  !default;
+$me-at-work-cat-height:             86px  !default;
+
+.me-at-work-wrapper {
+  max-width: $me-at-work-width;
+  margin: 80px auto;
+
+  @include media-breakpoint-up(sm) {
+    margin: 120px auto 80px;
+  }
+}
+
+.me-at-work {
+  position: relative;
+  max-height: 200px;
+  @include clearfix();
+}
+
+.me-at-work-self {
+  position: relative;
+  width: percentage(297px / $me-at-work-width);
+  margin-left: percentage(10px / $me-at-work-width);
+  float: left;
+}
+
+// cat at work
+.me-at-work-cat {
+  position: absolute;
+  width: percentage($me-at-work-cat-width / $me-at-work-width);
+  right: percentage(20px / $me-at-work-width);
+  bottom: percentage(33px / $me-at-work-max-height) * -1; // 33 is height of tail
+}
+
+.me-at-work-cat-head {
+  position: absolute;
+  width: percentage($me-at-work-cat-head-width / $me-at-work-cat-width);
+  top: percentage(20px / $me-at-work-cat-height);
+  animation: cat-bounce-head 1s ease-in-out 0s infinite alternate none;
+}
+
+.me-at-work-cat-dream {
+  position: absolute;
+  top: -112%;
+  right: percentage(17px / $me-at-work-cat-width) * -1;
+  animation: cat-bounce-head 1s ease-in-out 0s infinite alternate none;
+}
+
+// song
+.me-at-work-song {
+  width: percentage(25px / $me-at-work-width-self);
+  top: percentage(30px / $me-at-work-max-height) * -1;
+  right: percentage(5px / $me-at-work-width-self) * -1;
+  position: absolute;
+
+  &.second {
+    right: percentage(30px / $me-at-work-width-self) * -1;
+    top: percentage(10px / $me-at-work-max-height);
+  }
+}
+
+// table
+.me-at-work-table {
+  img {
+    @include center-block();
+  }
 }
