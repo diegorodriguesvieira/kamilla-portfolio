@@ -96,6 +96,7 @@ $me-at-work-cat-height:             86px  !default;
 }
 
 .me-at-work-cat-dream {
+  width: 100%;
   position: absolute;
   top: -112%;
   right: percentage(17px / $me-at-work-cat-width) * -1;
