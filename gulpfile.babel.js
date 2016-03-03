@@ -162,7 +162,8 @@ gulp.task('serve', ['scripts', 'styles', 'fonts'], () => {
     // Customize the Browsersync console logging prefix
     logPrefix: 'KPT',
     server: ['.tmp', 'app'],
-    port: 3000
+    port: 3000,
+    open: false
   });
 
   gulp.watch(['app/**/*.html'], reload);
@@ -177,7 +178,8 @@ gulp.task('serve:dist', ['default'], () =>
     notify: false,
     logPrefix: 'KPT',
     server: 'dist',
-    port: 3001
+    port: 3001,
+    open: false
   })
 );
 
