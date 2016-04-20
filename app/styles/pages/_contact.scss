@@ -1,0 +1,13 @@
+//
+// Contact
+// ====================================
+
+.letter-box,
+.contact-form {
+  width: 100%;
+  float: left;
+
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+}

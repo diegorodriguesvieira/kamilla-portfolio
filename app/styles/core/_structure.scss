@@ -8,4 +8,5 @@
   margin: 0 auto;
   padding-left: $container-horizontal-padding;
   padding-right: $container-horizontal-padding;
+  @include clearfix();
 }

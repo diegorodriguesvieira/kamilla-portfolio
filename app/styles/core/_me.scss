@@ -92,7 +92,6 @@ $me-at-work-cat-height:             86px  !default;
   position: absolute;
   width: percentage($me-at-work-cat-head-width / $me-at-work-cat-width);
   top: percentage(20px / $me-at-work-cat-height);
-  animation: cat-bounce-head 1s ease-in-out 0s infinite alternate none;
 }
 
 .me-at-work-cat-dream {
@@ -100,7 +99,6 @@ $me-at-work-cat-height:             86px  !default;
   position: absolute;
   top: -112%;
   right: percentage(17px / $me-at-work-cat-width) * -1;
-  animation: cat-bounce-head 1s ease-in-out 0s infinite alternate none;
 }
 
 // song

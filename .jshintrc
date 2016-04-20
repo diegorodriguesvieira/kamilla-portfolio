@@ -1,4 +1,5 @@
 {
+  "predef": ["angular"],
   "node": true,
   "browser": true,
   "esnext": true,

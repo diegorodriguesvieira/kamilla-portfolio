@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600,400">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body class="portfolio">
+  <body class="about" ng-app="LoadingBar" ng-controller="LoadingBarCtrl">
 
     <div id="wrapper">
       <header class="page-header">
@@ -43,8 +43,8 @@
                   </div>
 
                   <div class="me-at-work-cat">
-                    <img class="me-at-work-cat-dream" src="svg/me-at-work-biscuit-dreams.svg">
-                    <img class="me-at-work-cat-head" src="svg/cat-at-work-head.svg">
+                    <img class="me-at-work-cat-dream sleep" src="svg/me-at-work-biscuit-dreams.svg">
+                    <img class="me-at-work-cat-head sleep" src="svg/cat-at-work-head.svg">
                     <img src="svg/cat-at-work.svg">
                   </div>
                 </div><!-- /.me-at-work -->
@@ -84,7 +84,10 @@
       </footer>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-2.1.4.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>
+    <script src="/scripts/vendor/loading-bar.js"></script>
+    <script src="/scripts/app.js"></script>
+
   </body>
 </html>

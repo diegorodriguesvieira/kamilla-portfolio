@@ -16,7 +16,9 @@
 @import "core/icons";
 @import "core/structure";
 @import "core/photoswipe";
+@import "core/loading-bar";
 @import "core/utilities";
+@import "core/forms";
 
 // Layout
 @import "layout/header";
@@ -24,3 +26,4 @@
 
 //Pages
 @import "pages/home";
+@import "pages/contact";

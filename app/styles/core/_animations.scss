@@ -7,6 +7,10 @@
   animation: pulse-heart 1s infinite;
 }
 
+.sleep {
+  animation: cat-bounce-head 1s ease-in-out 0s infinite alternate none;
+}
+
 .song {
 	animation: song 1.2s infinite;
 }
